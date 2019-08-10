@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, user-scalable=no">
+       <title>Actual Size Visualizer: Area</title>
+       <link href="styles-area.css"rel = "stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="grey-out">
+            <div id="pop-up">
+                <input id="input" placeholder="Diagonal Screen Size"></input>
+                <p id="prime-pop-up">ʺ</p>
+                <button id="go">Go</button>
+            </div>
+        </div>
+        <div id ="header">
+            <div id="title-box">
+            <p id="title">
+                Actual Size
+            </p> 
+            <p id="subtitle">
+                Length & Area Visualizer
+            </p>
+            <div id = "button-background">
+            <a href="index.html">
+                <button id="length-button">Length</button>
+            </a>
+            <a href="area.html">
+                <button id="area-button">Area</button>
+            </a>
+            </div>
+            </div>
+            <div id="screen-size-box">
+                <p id="screen-label">Screen Size:</p>
+                <textarea id="screen-size-input"></textarea>
+                <p id ="prime-symbol">ʺ</p>
+                <div id="question-mark-circle">?</div>
+                <img id="screen-size-info" src="screen-size-info.png"></img>
+            </div>
+            <div id="width-input-box">
+                <textarea id="text-area-width"></textarea>
+                <p class="dimension-symbol">W</p>
+                <p id="by-symbol">x</p>
+            </div>
+            <div id="height-input-box">
+                <textarea id="text-area-height"></textarea>
+                <p class="dimension-symbol">H</p>
+            </div>
+            <div id="unit-selector-box">
+                <button class="unit-button" id="inch-button">in</button>
+                <button class="unit-button" id="centimeter-button">cm</button>
+            </div>
+        </div>
+        <div id="area">
+            <div id="overflow">
+                    <div id="rectangle">
+                        <!--where dimension lines are created--> 
+                    </div>
+                    <div id="width-line"></div>
+                    <div id="height-line"></div>
+            </div> 
+        </div>
+        <footer style="right: 6px; top: 2px; position: absolute">
+            <small>&copy; Copyright <script>document.write(new Date().getFullYear())</script></small>
+        </footer>   
+        <script src="app-area.js"></script>
+    </body>
+</html>

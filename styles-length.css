@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
+
+* {
+    margin: 10;
+    padding: 10;
+    font-family: "Inconsolata", monospace;
+}
+
+html {
+    background-color: #4E4E4E;
+}
+
+button:active {
+    color: black;
+}
+
+#grey-out {
+    background: rgba(0, 0, 0, 0.8);
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    display: none;
+}
+
+#pop-up {
+    position: absolute;
+    width: 294px;
+    height: 60px;
+    background: #C4C4C4;
+    left: 0; 
+    right: 0;
+    top: 0; 
+    bottom: 100px;
+	margin: auto;
+	max-width: 100%;
+	max-height: 100%;
+    overflow: auto;
+    z-index: 1001;
+    opacity: 1;
+}
+
+#prime-pop-up {
+    position: absolute;
+    left: 229px;
+    top: -7px;
+}
+
+#input {
+    position: absolute;
+    width: 215px;
+    height: 40px;
+    margin-left: 7.5px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    background: #EAEAEA;
+    font-size: 21px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    border: none;
+    padding-left: 3px;
+}
+
+#go {
+    position: absolute;
+    font-size: 21px;
+    margin-top: 10px;
+    right: 7.5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 170, 17);
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+#header {
+    position: absolute;
+    width: 725px;
+    height: 123px;
+    left: 30px;
+    top: 30px;
+    background: rgba(206, 206, 206, 0.3);
+    box-shadow: 1px 4px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 1px;
+}
+
+#title-box {
+    position: absolute;
+    width: 300px;
+    height: 73px;
+    left: 6px;
+    top: 6px;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+#title {
+    font-weight: normal;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+#subtitle {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: -40px;
+    top: 0 px;
+}
+
+#button-background {
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    background-color: #C4C4C4;
+    font-size: 20px;
+    border: none;
+    bottom: -37px;
+    transition: 0.173s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+#button-background:hover {
+    background-color: rgb(184, 184, 184);
+}
+
+#length-button {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    background-color: rgb(0, 170, 17);
+    font-size: 20px;
+    border: none;
+    bottom: 0px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+#area-button {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    font-size: 20px;
+    border: none;
+    bottom: 0px;
+    background: none;
+}
+
+#screen-size-box {
+    position: absolute;
+    top: 74.5px;
+    left: 546px;
+    width: 159px;
+    height: 27px;
+    background-color: rgb(201, 201, 201);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+#screen-label {
+    position: absolute;
+    font-size: 15px;
+    top: -9px;
+    left: 7px;
+}
+
+#screen-size-input {
+    position: absolute;
+    top: 2px;
+    left: 100px;
+    width: 40px;
+    height: 23px;
+    padding-top: 4px;
+    padding-left: 4px;
+    color: black;
+    font-size: 15px;
+    background-color: rgb(201, 201, 201);
+    box-sizing: border-box;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    resize: none;
+}
+
+#prime-symbol {
+    position: absolute;
+    font-size: 15px;
+    top: -16px;
+    left: 143px;
+}
+
+#question-mark-circle {
+    position: absolute;
+    right: 4px;
+    top: 11px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFA800;
+    color: #505050;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.45);
+    transition: 0.173s ease-in-out;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#question-mark-circle:hover {
+    background-color: #FFA800;
+    color: black;
+    cursor: default;
+}
+
+#question-mark-circle:hover+#screen-size-info {
+    display: block;
+    transition: 0.173s ease-in-out;
+}
+
+#screen-size-info {
+    position: absolute;
+    width: 249.3886010364;
+    height: 63px;
+    left: 170px;
+    top: -20px;
+    box-shadow: 1px 4px 30px rgba(0, 0, 0, 0.25);
+    display: none;
+    transition: 0.173s ease-in-out;
+}
+
+#length-input-box {
+    position: absolute;
+    left: 346px;
+    top: 21.5px;
+    height: 0px;
+    border: none;
+}
+
+#text-area {
+    width: 160px;
+    height: 80px;
+    font-size: 55px;
+    padding-top: 9px;
+    padding-left: 9px;
+    background-color: rgb(201, 201, 201);
+    resize: none;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.50);
+    border: none;
+}
+
+#dimension-symbol {
+    position: absolute;
+    right: 4px;
+    bottom: -95px;
+    font-size: 17px;
+    color: black;
+}
+
+#unit-selector-box {
+    position: absolute;
+    left: 546px;
+    top: 21.5px;
+    width: 159px;
+    height: 27px;
+    background-color: rgb(201, 201, 201);
+    box-sizing: border-box;
+    transition: 0.173s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+#unit-selector-box:hover {
+    background-color: rgb(184, 184, 184);
+}
+
+.unit-button {
+    width: 79.5px;
+    height: 27px;
+    margin: 0;
+    padding: -2px;
+    position: absolute;
+    font-size: 20px;
+    border: none;
+}
+
+
+#inch-button {
+    left: 0px;
+    background-color: rgb(0, 170, 17);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+#centimeter-button {
+    left: 79.5px;
+    background: none;
+    
+}
+
+
+#overflow {
+    position: absolute;
+    top: 183px;
+    left: 30px;
+    height: 60px;
+    overflow: hidden;
+}
+
+#rectangle {
+    position: absolute;
+    height: 60px;
+    background: linear-gradient(0deg, #FF8A00 0%, #D21818 139.47%);
+}
+
+#horizontal-line {
+    position: absolute;
+    height: 2px;
+    left: 0px;
+    bottom: -.5px;
+    background-color: black;
+}
+
+.inch-line {
+    position: absolute;
+    bottom: 0px;
+    width: 2px;
+    height: 16px;
+    margin: 0px;
+    background-color: black;
+
+}
+
+.half-inch-line {
+    position: absolute;
+    bottom: 0px;
+    width: 1px;
+    height: 8px;
+    margin: 0px;
+    background-color: black;
+}
+
+.number {
+    font-size: 19px;
+    position: absolute;
+    bottom: 1px;
+    left: -3.5px;
+    text-align: center;
+}
