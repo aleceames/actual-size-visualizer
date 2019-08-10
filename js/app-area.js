@@ -261,7 +261,7 @@ function guessDiagonal() {
                     break;    
         }
     } else {
-        // chrombook, linux, etc.
+        // chromebook, linux, etc.
         switch (Math.floor(screenPixelDiagonal)) {
             // Chromebook
             case 1536:
