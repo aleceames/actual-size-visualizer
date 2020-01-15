@@ -345,9 +345,7 @@ function IsNumeric(input)
 
 
 function calculatePPI () {
-
     PPI = screenPixelDiagonal / screenInchDiagonal;
-    
 }
 
 function determineLength () {
@@ -357,7 +355,6 @@ function determineLength () {
     document.getElementById("rectangle").style.width = window.innerWidth - 30 + 'px';
     document.getElementById("horizontal-line").style.width = window.innerWidth - 31 + 'px';
     document.getElementById("overflow").style.width = window.innerWidth - 31 + 'px';
-
 }
 
 function generateLinesAndNumbers (browserWidthInches) {
